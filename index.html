@@ -5,99 +5,99 @@
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
     <meta charset="utf-8">
     <title>busybus</title>
   </head>
   <body>
     <div class="wrapper">
-      <section class="status-bar">
+      <header class="status-bar">
         <!-- <img src="./img/topNav.png" alt="Top Navigation"> -->
-      </section>
-      <div class="nav-bar">
+      </header>
+      <nav class="nav-bar">
         <i class="material-icons hamburger">menu</i>
         <div class="title">Washington and State St</div>
         <i class="material-icons dots">more_vert</i>
-      </div>
+      </nav>
       <section class="map"></section>
-      <div class="container-fluid label-wrapper">
-        <div class="row labels">
-          <div class="col-2 line">Line</div>
-          <div class="col-6 destination">Destination</div>
-          <div class="col-4 frequency">Frequency</div>
-        </div>
-      </div>
-      <section class="bounds">
+      <main class="lower-wrapper">
+        <ul class="labels">
+          <li class="line-title">Line</li>
+          <li class="destination-title">Destination</li>
+          <li class="frequency-title">Arrival</li>
+        </ul>
 
-        <div class="container-fluid">
-          <h5 class="titles">Eastbound</h5>
-          <div class="row eastbound bound">
-            <div class="col-2 line-number">60</div>
-            <div class="col-6 destination">Randolph/Harbor Dr</div>
-            <div class="col-4 frequency">Every 20 minutes</div>
-          </div>
-          <div class="row eastbound bound">
-            <div class="col-2 line-number">124</div>
-            <div class="col-6 destination">Navy Pier</div>
-            <div class="col-4 frequency">Every 10 minutes</div>
-          </div>
-        </div>
+        <section class="bounds">
+          <section class="container-fluid">
+            <h5 class="titles">Eastbound</h5>
+            <ul class="eastbound bound">
+              <li class="line-number">60</li>
+              <li class="destination">Randolph/Harbor Dr</li>
+              <li class="frequency">Every 20 minutes</li>
+            </ul>
+            <ul class="eastbound bound">
+              <li class="line-number">124</li>
+              <li class="destination">Navy Pier</li>
+              <li class="frequency">Every 10 minutes</li>
+            </ul>
+          </section>
 
-        <div class="container-fluid">
-          <h5 class="titles">Northbound</h5>
-          <div class="row northbound bound">
-            <div class="col-2 line-number">151</div>
-            <div class="col-6 destination">Devon/Clark</div>
-            <div class="col-4 frequency">Every 16 minutes</div>
-          </div>
-        </div>
+          <section class="container-fluid">
+            <h5 class="titles">Northbound</h5>
+            <ul class="row northbound bound">
+              <li class="line-number">151</li>
+              <li class="destination">Devon/Clark</li>
+              <li class="frequency">Every 16 minutes</li>
+            </ul>
+          </section>
 
-        <div class="container-fluid">
-          <h5 class="titles">Southbound</h5>
-          <div class="row southbound bound">
-            <div class="col-2 line-number">J14</div>
-            <div class="col-6 destination">103rd/Stony Island</div>
-            <div class="col-4 frequency">Every 15 minutes</div>
-          </div>
-          <div class="row southbound bound">
-            <div class="col-2 line-number">124</div>
-            <div class="col-6 destination">Navy Pier</div>
-            <div class="col-4 frequency">Every 10 minutes</div>
-          </div>
-        </div>
+          <section class="container-fluid">
+            <h5 class="titles">Southbound</h5>
+            <ul class="southbound bound">
+              <li class="line-number">J14</li>
+              <li class="destination">103rd/Stony Island</li>
+              <li class="frequency">Every 15 minutes</li>
+            </ul>
+            <ul class="southbound bound">
+              <div class="line-number">124</div>
+              <div class="destination">Navy Pier</div>
+              <div class="frequency">Every 10 minutes</div>
+            </ul>
+          </section>
 
-        <div class="container-fluid">
-          <h5 class="titles">Reroute</h5></h5>
-          <div class="row reroute bound">
-            <div class="col-2 line-number">6x</div>
-            <div class="col-6 destination">Jackson Park Express</div>
-            <div class="col-4 frequency">N/A</div>
-          </div>
-        </div>
+          <section class="container-fluid">
+            <h5 class="titles">Reroute</h5>
+            <ul class="reroute bound">
+              <li class="line-number">6x</li>
+              <li class="destination">Jackson Park Express</li>
+              <li class="frequency">N/A</li>
+            </ul>
+          </section>
 
-        <div class="container-fluid">
-          <h5 class="titles">Out of Service</h5>
-          <div class="row out-of-service bound">
-            <div class="col-2 line-number">4</div>
-            <div class="col-6 destination">Cottage Grove</div>
-            <div class="col-4 frequency">Resumes 12:10am</div>
-          </div>
-          <div class="row out-of-service bound">
-            <div class="col-2 line-number">20</div>
-            <div class="col-6 destination">Madison</div>
-            <div class="col-4 frequency">Resumes 12:10am</div>
-          </div>
-          <div class="row out-of-service bound">
-            <div class="col-2 line-number">157</div>
-            <div class="col-6 destination">Streeterville/Taylor</div>
-            <div class="col-4 frequency">Resumes 6:00am</div>
-          </div>
-        </div>
-      </section>
-      <section class="bottom-nav">
+          <section class="container-fluid">
+            <h5 class="titles">Out of Service</h5>
+            <ul class="out-of-service bound">
+              <li class="line-number">4</li>
+              <li class="destination">Cottage Grove</li>
+              <li class="frequency">Resumes 12:10am</li>
+            </ul>
+            <ul class="out-of-service bound">
+              <li class="line-number">20</li>
+              <li class="destination">Madison</li>
+              <li class="frequency">Resumes 12:10am</li>
+            </ul>
+            <ul class="out-of-service bound">
+              <li class="line-number">157</li>
+              <li class="destination">Streeterville/Taylor</li>
+              <li class="frequency">Resumes 6:00am</li>
+            </ul>
+          </section>
+        </section>
+      </main>
+
+      <footer class="bottom-nav">
         <img src="./img/bottomNav.png" alt="Bottom Navigation" />
-      </section>
+      </footer>
     </div>
   </body>
 </html>

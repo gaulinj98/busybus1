@@ -26,6 +26,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+li {
+  list-style-type: none;
+}
+
 .wrapper {
   font-size: 32px;
   //font-size: 16px;
@@ -69,20 +73,36 @@ body {
 }
 
 .container-fluid {
-  width: 90vw;
-  height: 150px;
+  width: 100%;
   border-bottom: 1px solid #c1b9b9;
-  padding: 0 5px;
+  padding: 0 5px 40px;
+  display: inline-block;
 }
 
 .container-fluid:last-child {
   border: none;
-  /* margin-bottom: 50px; */
-  margin-bottom: 185px;
+  margin-bottom: 140px;
+}
+
+.bound {
+  display: flex;
+
+}
+.destination {
+  width: 50%;
+}
+
+.lower-wrapper {
+  padding: 0 40px;
 }
 
 .line-number {
   font-weight: bold;
+  width: 20%;
+}
+
+.frequency {
+  width: 30%;
 }
 
 .label-wrapper {
@@ -92,10 +112,29 @@ body {
 .labels {
   padding: 6px 0;
   font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #c1b9b9;
+
+}
+
+.labels li {
+  display: inline-block;
+}
+
+.line-title {
+  float: left;
+}
+
+.destination-title {
+  text-align: center;
+}
+
+.frequency-title {
+  float: right;
 }
 
 .titles {
-  margin-left: 151px;
+  margin-left: 178px;
   color: green;
   padding-bottom: 13px;
   padding-top: 4px;
